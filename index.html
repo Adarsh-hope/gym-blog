@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
+
 </head>
 <body>
+    <style>
+        .carousel-item{
+            height: 34rem;
+            background-color: #777;
+        }
+        .overlay-image{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-position: center;
+            background-size: cover;
+        }
+        .decoration{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+        ul{
+            list-style-type: none;
+        }
+        @media (max-width: 575.98px) {
+            .custom-container {
+                padding-left: 5rem;
+            }
+        }
+        
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a href="#" class="navbar-brand">LOGO</a>
+            <a href="#" class="navbar-brand">Bee FIT</a>
 
             <!-- navbar toggle button for small screen -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +67,240 @@
             </div>
         </div>
     </nav>
-    
+
+    <!-- carousel -->
+
+     <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+        <!-- indicator/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+            class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+            class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+            class="active"></button>
+        </div>
+
+        <!-- slide show/carousel -->
+        <div class="carousel-inner" >
+            <div class="carousel-item active">
+                <div class="overlay-image" style="background-image: url(img/pexels-leon-ardho-1552242.jpg);"></div>
+            </div>
+            <div class="carousel-item ">
+                <div class="overlay-image" style="background-image: url(img/pexels-pixabay-416778.jpg);"></div>
+            </div>
+            <div class="carousel-item ">
+                <div class="overlay-image" style="background-image: url(img/pexels-li-sun-2294361.jpg);"></div>
+            </div>
+        </div>
+
+        
+        <!-- left and right controls -->
+
+        <button class="carousel-control-prev" type="button"
+        data-bs-target="#carousel" data-bs-slide="prev"
+        ><span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#carousel" data-bs-slide="next"
+        ><span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- section recent stories -->
+        <div class="container my-5 mx-auto" style="background-color:  #e6ebf0;">
+            <h2 class="h2" >— Recent stories —</h2>
+
+            <div class="row mt-5">
+                <div class="col mb-5 d-flex justify-content-center">
+                    <div class="card"  style="width: 250px;">
+                        <img src="img/recent1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Ultimate guide for weight lose</h4>
+                            <p class="card-text"></p>
+                            <a href="" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 d-flex justify-content-center">
+                    <div class="card" style="width: 250px;">
+                        <img src="img/recent2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Build your dream physique in 2024</h4>
+                            <p class="card-text"></p>
+                            <a href="" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 d-flex justify-content-center">
+                    <div class="card" style="width:250px;">
+                        <img src="img/recent3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Top 10 muscle building foods</h4>
+                            <p class="card-text"></p>
+                            <a href="" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- most popular stories -->
+
+        <div class="container  mx-auto" style="background-color: #e6ebf0;">
+            <h2 class="h2">— Most popular stories —</h2>
+            <div class="row mt-5 custom-container">
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/protien.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Best protien foods for muscle building</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/injury.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">How to avoid injuries during workout</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/bellly fat.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">diet plan for reducing belly fat</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/protein powder.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Suppliements required for muscles</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/sleep.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Why sleep is important for recovery</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/split.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Best workout split for fast muscle building</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/core.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Tighten your core by doing this workout</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/beginner.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">7 effective tips for beginners at gym</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/stamina.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">How to boost your stamina by running</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card" style="width: 200px;">
+                        <img src="img/fun.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Mental health benifts of going to gym</h4>
+                            <a href="#" class="btn btn-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="container d-flex justify-content-center p-5">
+            <div class="d-flex">
+        <span class="spinner-border spinner-border-lg"></span>
+        <span class="mx-2">Loading...</span>
+
+            </div>
+        </div>
+
+        <div class="container bg-dark">
+            <div class="row py-5">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item-flush">
+                            <a href="" class="decoration">ABOUT US</a>
+                        </li> 
+                        <li class="list-group-item-flush">
+                            <a href="" class="decoration">PRIVACY POLICY</a>
+                        </li>
+                        <li class="list-group-item-flush">
+                            <a href="" class="decoration">TERMS & CONDITION</a>
+                        </li>
+                        <li class="list-group-item-flush">
+                            <a href="" class="decoration">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-row-reverse ">
+                    <ul class="d-flex">
+                        <li class="mx-3">
+                            <a href="">
+                                <i class="bi bi-facebook text-white"></i>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="">
+                                <i class="bi bi-twitter text-white"></i>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="">
+                                <i class="bi bi-instagram text-white"></i>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="">
+                                <i class="bi bi-youtube text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+            
+            </div>
+        
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
